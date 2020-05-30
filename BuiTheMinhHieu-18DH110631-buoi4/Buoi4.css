@@ -1,0 +1,110 @@
+.container{
+    width: 800px;
+    margin: auto;
+}
+.wrapper{
+	border-top: 2px solid black;
+    border: 1px solid black;
+}
+.title-heading{
+	text-shadow: 1px 1px 10px #0080ff,-1px -1px 10px #0080ff;
+	display: flex;
+	padding-left: 137px;
+	color: 	#0040ff;
+	font-size: 200%;
+	position: absolute;
+	z-index: 2;
+	top: -20px;
+}
+.img1-heading{
+	position: absolute;
+	top: 10px;
+}
+.img2-heading{
+	position: relative;
+	z-index: 1;
+	left: -440px;
+	top: 1px;
+
+}
+.left-title-heading{
+	height: auto;
+	width: 700px;
+}
+.heading{
+	display: flex;
+	border-bottom: 1px solid black;
+}
+.body{
+	margin-top: 15px;
+	display: flex;
+}
+.content-left{
+	width: 300px;
+	border-right: 1px solid black;
+}
+.content-right{
+	margin-top: -21px;
+	width: 800px;
+}
+.content-body h4{
+	background-color: #0000ff;
+	color: white;
+	clear: left;
+}
+.content-body img{
+	float: left;
+	margin-top: -10px;
+}
+#NoiDung1 h4{
+	background-color: white;
+	color: #0040ff;
+	margin-top: -20px;
+}
+#NoiDung2 h4{
+	background-color: white;
+	color: #0040ff;
+	border-top: 1px solid black;
+	margin-top: 30px;
+}
+.content-body #AmThuc img{
+	float: right;
+
+}
+.content-body #AmNhac{
+	clear: right;
+	margin-top: 50px;
+}
+#vedau {
+	clear: left;
+	text-align: right;
+	margin-bottom: -15px;
+}
+#vedau a{
+	background-color: grey;
+}
+.content-body #AmNhac img{
+float: right;
+}
+#AmNhac #vedau{
+	clear: right;
+	text-align: right;
+}
+#AmNhac #NoiDung2{
+	clear: right;
+	margin-bottom: 15px;
+}
+
+h2{
+	padding-top: 15px;
+}
+h3{
+	padding-top: 30px;
+}
+
+.content-left ul{
+	list-style: circle;
+}
+.content-left ul li{
+	padding-bottom: 10px;
+}

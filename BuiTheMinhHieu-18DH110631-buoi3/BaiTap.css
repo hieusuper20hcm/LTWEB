@@ -1,0 +1,92 @@
+#Cau1 table{
+	border: 1px solid red;
+}
+img{
+	width: 40%;
+	height: 50%;
+}
+#Cau1 .tieude{
+	background-color: red;
+	color:white;
+	font-size:20px;
+	text-align: right;
+	width: 80%;
+}
+.dong2{
+	height: 5%;
+}
+.dong3{
+	text-align: center;
+	background-color: #ffb3b3;
+	color: #ff0000;
+	font-weight:bold;
+	font-size:28px;
+}
+ul{
+	padding-top: 0px;
+	padding-left: 20px;
+}
+#noidung{
+	padding: 0px;
+	color:red;
+	font-weight: bold;
+	font-size: 18px;
+	list-style: square;
+}
+
+#noidung2{
+	list-style: disc;
+}
+.dong4{
+	width: 50%
+}
+input{
+	margin: 2px;
+}
+
+#Bai2 table{
+	background-color: blue;
+}
+.submit{
+	margin-left: 30%;
+	background-color: grey;
+}
+#Bai3 table{
+	background-color: #FF9933;
+	margin:auto;
+}
+.group{
+	position: absolute;
+	border: 1px solid black;
+	left: 1000px;
+	top: 10px;
+	z-index: 1;
+ }
+#Bai3{
+	border: 1px solid black;
+	margin: auto;
+	width: 600px;
+	height: 450px;
+}
+#Bai3 h1{
+	text-align: center;
+	color: blue;
+}
+.group2{
+            text-align: center;
+            border: 1px solid black;
+            width: 500px;
+            padding: 20px;
+            margin: 10px;
+            position: relative;
+            z-index: 2;
+}
+
+.txt{
+            position: absolute;
+            top: -20px;
+            left: 1rem;
+            color: rgb(246, 246, 156);
+            background-color: #FF9933;
+}
+

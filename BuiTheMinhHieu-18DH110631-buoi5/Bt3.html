@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ThêmXóa</title>
+		 <meta charset="utf-8">
+	</head>
+	<body>
+			<b>Họ và tên: </b>
+			<input type="text" id="hoten" value=""></br>
+			<b>Ngày sinh: </b>
+			<input type="text" id="ngaysinh" value=""></br>
+			<b>Lớp: </b>
+			<input type="text" id="lop" value=""></br>
+			<button type="button" id="themSinhVien">Thêm sinh viên</button>
+			<div id="Nhapthongtin"></div>
+			<button type="button" id="xoaSinhVien">Xóa sinh viên</button>
+		<script type="text/javascript">
+			var array=[];
+			function DomID(id){
+				return document.getElementById(id);
+			}
+			DomID('themSinhVien').addEventListener("click",function(){
+  				let SinhVien={
+  					hoTen: DomID('hoten').value,
+					ngaySinh: DomID('ngaysinh').value,
+					Lop: DomID('lop').value
+  				}
+  				array.push(SinhVien);
+  				InSV();
+			})
+			DomID('xoaSinhVien').addEventListener("click",()=>{
+				array.pop();
+				InSV();
+			})
+			function InSV(){
+				var sinhVienStr = "";
+				for(var i=0;i<array.length;i++){
+				sinhVienStr += "<b>Họ Tên: </b>" + array[i].hoTen+ "</br>" +
+				"<b>Ngày Sinh: </b>" + array[i].ngaySinh + "</br>" +
+				"<b>Lớp: </b>" + array[i].Lop + "</br>";
+				}
+				DomID('Nhapthongtin').innerHTML = sinhVienStr;
+			}
+
+		</script>
+	</body>
+</html>

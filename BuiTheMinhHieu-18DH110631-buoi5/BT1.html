@@ -1,0 +1,39 @@
+<!Doctype HTML>
+<html>
+	<head>
+		<title>Max,Min</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<button type="button" id="input">INPUT</button></br>
+		<b>Mảng là: </b>
+		<div id="InMang"></div>
+		<button type="button" id="MaxMin">MaxMin</button></br>
+		<div id="Max"></div>
+		<div id="Min"></div>
+		
+		<script>
+			var array=[];
+			function DomID(id){
+				return document.getElementById(id);
+			}
+			DomID('input').addEventListener("click",()=>{
+			do{
+				var n=prompt("Nhap phan tu:");
+				array.push(n);
+				}while(n!=null);
+				array.pop()
+				document.getElementById("InMang").innerText = array;
+			})
+			DomID('MaxMin').addEventListener("click",()=>{
+				var max=Math.max.apply(Math,array);
+				document.getElementById("Max").innerHTML = "Max: "+max;
+				var min=Math.min.apply(Math,array);
+				document.getElementById('Min').innerText = "Min: "+min;
+			})
+
+			
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Thay đổi nội dung</title>
+		 <meta charset="utf-8">
+		 <style>
+		 	.style1{
+		 		background-color: blue;
+		 		width: 350px;
+		 		height: 50px;
+		 		text-align: center;
+		 		padding-top: 25px;
+		 		color: white;
+		 	}
+		 	.style2{
+		 		background-color: blue;
+		 		width: 300px;
+		 		height: 50px;
+		 		text-align: center;
+		 		padding-top: 25px;
+		 		color: white;
+		 	}
+		 </style>
+	</head>
+	<body>
+		<div id="nd">Nội dung</div>
+		<button type="" id="noidung1">Xem nội dung 1</button>
+		<button type="" id="noidung2" onclick="nd1()">Xem nội dung 2</button>
+		<script type="text/javascript">
+			function DomID(id){
+				return document.getElementById(id);
+			}
+			DomID('noidung1').addEventListener("click", function(){
+				DomID('nd').innerHTML="Demo thay đổi nội dung";
+				DomID('nd').className ="style1";
+			});
+			DomID('noidung2').addEventListener("click",function(){
+				DomID('nd').innerHTML="Nội dung của thẻ div đã bị thay đổi";
+				DomID('nd').className ="style2";
+			})
+		</script>
+	</body>
+</html>
