@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Buoi7.css">
+    <title>Bai6</title>
+    <script>
+        function cong(form) {
+            a=Number(form.a.value);
+            b=Number(form.b.value);
+            c=a+b
+            form.kq.value = c
+        }
+        function tru(form){
+            a=Number(form.a.value);
+            b=Number(form.b.value);
+            form.kq.value=a-b;
+        }
+    </script>
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <form name="form1">
+            <p><input type="text" size="4" value="12" name="a">
+            <input type="button" value="  +  "  onClick="cong(form)">
+            <input type="button" value="  -  "  onClick="tru(form)">
+            <input type="text" size="4" value="0" name="b">
+            = 
+            <input type="text" value="0" name="kq" size="9"> </p>
+        </form>          
+    </div>
+
+</body>
+
+</html>
